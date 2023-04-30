@@ -14,8 +14,9 @@ export const saveToDo = async (req, res) => {
 };
 
 export const deleteToDo = (req, res) => {
-  const { _id } = req.params;
-  Todo.findByIdAndDelete(_id)
+  const { id } = req.params;
+  console.log(id);
+  Todo.findByIdAndDelete(id)
     .then(() => res.set(201).send('deleted succesfully...'))
     .catch((err) => console.log(err));
 };

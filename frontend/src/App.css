@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #4c86fa;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,55 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 1rem;
+}
+h1 {
+  text-align: center;
+}
+.top {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+input {
+  border: none;
+  outline: none;
+  width: 400px;
+  padding: 0 0.5rem;
+  border-bottom: 1px solid rgb(45, 23, 248);
+}
+.add {
+  background-color: rgb(45, 23, 248);
+  color: white;
+  padding: 0.5rem 1.5rem;
+}
+.item {
+  position: relative;
+  margin-top: 1rem;
+  background-color: rgb(45, 23, 248);
+  color: white;
+  padding: 1.5rem 3rem;
+  border-radius: 5px;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  display: flex;
+  gap: 0.5rem;
+}
+i {
+  cursor: pointer;
 }

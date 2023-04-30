@@ -11,7 +11,7 @@ import {
 
 router.get('/get', getToDo);
 router.post('/add', saveToDo);
-router.delete('/delete', deleteToDo);
+router.delete('/delete/:id', deleteToDo);
 router.put('/update', updateToDo);
 
 export default router;
